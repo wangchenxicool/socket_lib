@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Address	socket_lib/Address.cpp	/^    Address::Address()$/;"	f	class:Socket::Address
+Address	socket_lib/Address.cpp	/^    Address::Address(Ip ip, Port port)$/;"	f	class:Socket::Address
+Address	socket_lib/Address.cpp	/^    Address::Address(Port port)$/;"	f	class:Socket::Address
+Address	socket_lib/Address.cpp	/^    Address::Address(const Address &address)$/;"	f	class:Socket::Address
+Address	socket_lib/Address.cpp	/^    Address::Address(struct sockaddr_in address)$/;"	f	class:Socket::Address
+Address	socket_lib/Socket.hpp	/^    struct Address : protected sockaddr_in {$/;"	s	namespace:Socket
+CommonSocket	socket_lib/CommonSocket.cpp	/^    CommonSocket::CommonSocket (int socket_type) {$/;"	f	class:Socket::CommonSocket
+CommonSocket	socket_lib/CommonSocket.cpp	/^    CommonSocket::CommonSocket (void) {$/;"	f	class:Socket::CommonSocket
+CommonSocket	socket_lib/Socket.hpp	/^    class CommonSocket {$/;"	c	namespace:Socket
+Datagram	socket_lib/Socket.hpp	/^    struct Datagram {$/;"	s	namespace:Socket
+IP	tcp_sender.cpp	5;"	d	file:
+Ip	socket_lib/Socket.hpp	/^    typedef string Ip;$/;"	t	namespace:Socket
+PORT	tcp_sender.cpp	6;"	d	file:
+Port	socket_lib/Socket.hpp	/^    typedef unsigned int Port;$/;"	t	namespace:Socket
+SOCKET_MAX_BUFFER_LEN	socket_lib/Socket.hpp	47;"	d
+Socket	socket_lib/Address.cpp	/^namespace Socket$/;"	n	file:
+Socket	socket_lib/CommonSocket.cpp	/^namespace Socket {$/;"	n	file:
+Socket	socket_lib/Datagram.cpp	/^namespace Socket {$/;"	n	file:
+Socket	socket_lib/Socket.hpp	/^namespace Socket {$/;"	n
+Socket	socket_lib/SocketException.cpp	/^namespace Socket {$/;"	n	file:
+Socket	socket_lib/TCP.cpp	/^namespace Socket {$/;"	n	file:
+Socket	socket_lib/UDP.cpp	/^namespace Socket {$/;"	n	file:
+SocketException	socket_lib/Socket.hpp	/^    class SocketException : public exception {$/;"	c	namespace:Socket
+SocketException	socket_lib/SocketException.cpp	/^    SocketException::SocketException (const string &message) {$/;"	f	class:Socket::SocketException
+SocketId	socket_lib/Socket.hpp	/^    typedef int SocketId;$/;"	t	namespace:Socket
+TCP	socket_lib/Socket.hpp	/^    class TCP : public CommonSocket {$/;"	c	namespace:Socket
+TCP	socket_lib/TCP.cpp	/^    TCP::TCP (const TCP &tcp) : CommonSocket() {$/;"	f	class:Socket::TCP
+TCP	socket_lib/TCP.cpp	/^    TCP::TCP (void) : CommonSocket (SOCK_STREAM) {$/;"	f	class:Socket::TCP
+UDP	socket_lib/Socket.hpp	/^    class UDP : public CommonSocket {$/;"	c	namespace:Socket
+UDP	socket_lib/UDP.cpp	/^    UDP::UDP (const UDP &udp) : CommonSocket() {$/;"	f	class:Socket::UDP
+UDP	socket_lib/UDP.cpp	/^    UDP::UDP (void) : CommonSocket (SOCK_DGRAM) {$/;"	f	class:Socket::UDP
+WINDOWS	socket_lib/Socket.hpp	35;"	d
+_ADDRESS_CPP_	socket_lib/Address.cpp	26;"	d	file:
+_COMMON_SOCKET_CPP_	socket_lib/CommonSocket.cpp	26;"	d	file:
+_DATAGRAM_CPP_	socket_lib/Datagram.cpp	26;"	d	file:
+_SOCKETEXCEPTION_CPP_	socket_lib/SocketException.cpp	26;"	d	file:
+_SOCKET_HPP_	socket_lib/Socket.hpp	25;"	d
+_TCP_CPP_	socket_lib/TCP.cpp	26;"	d	file:
+_UDP_CPP_	socket_lib/UDP.cpp	26;"	d	file:
+_address	socket_lib/Address.cpp	/^    void Address::_address(Ip ip, Port port)$/;"	f	class:Socket::Address
+_address	socket_lib/Socket.hpp	/^        Address _address;$/;"	m	class:Socket::TCP
+_binded	socket_lib/Socket.hpp	/^        bool _binded;$/;"	m	class:Socket::CommonSocket
+_error	socket_lib/Socket.hpp	/^        string _error;$/;"	m	class:Socket::SocketException
+_num_sockets	socket_lib/CommonSocket.cpp	/^    unsigned int CommonSocket::_num_sockets = 0;$/;"	m	class:Socket::CommonSocket	file:
+_num_sockets	socket_lib/Socket.hpp	/^        static unsigned int _num_sockets;$/;"	m	class:Socket::CommonSocket
+_opened	socket_lib/Socket.hpp	/^        bool _opened;$/;"	m	class:Socket::CommonSocket
+_socket	socket_lib/CommonSocket.cpp	/^    void CommonSocket::_socket (void) {$/;"	f	class:Socket::CommonSocket
+_socket_id	socket_lib/Socket.hpp	/^        SocketId _socket_id;$/;"	m	class:Socket::CommonSocket
+_socket_type	socket_lib/Socket.hpp	/^        int _socket_type;$/;"	m	class:Socket::CommonSocket
+accept_client	socket_lib/TCP.cpp	/^    TCP TCP::accept_client (void) {$/;"	f	class:Socket::TCP
+address	socket_lib/Socket.hpp	/^        Address address;$/;"	m	struct:Socket::Datagram
+address	socket_lib/TCP.cpp	/^    Address TCP::address (void) {$/;"	f	class:Socket::TCP
+close	socket_lib/CommonSocket.cpp	/^    void CommonSocket::close (void) {$/;"	f	class:Socket::CommonSocket
+connect_to	socket_lib/TCP.cpp	/^    void TCP::connect_to (Address address) {$/;"	f	class:Socket::TCP
+data	socket_lib/Socket.hpp	/^        DataType data;$/;"	m	struct:Socket::Datagram
+ip	socket_lib/Address.cpp	/^    Ip Address::ip(Ip ip)$/;"	f	class:Socket::Address
+ip	socket_lib/Address.cpp	/^    Ip Address::ip(void)$/;"	f	class:Socket::Address
+ip	socket_lib/TCP.cpp	/^    Ip TCP::ip (void) {$/;"	f	class:Socket::TCP
+listen_on_port	socket_lib/CommonSocket.cpp	/^    void CommonSocket::listen_on_port (Port port) {$/;"	f	class:Socket::CommonSocket
+listen_on_port	socket_lib/TCP.cpp	/^    void TCP::listen_on_port (Port port, unsigned int listeners = 1) {$/;"	f	class:Socket::TCP
+main	tcp_receiver.cpp	/^int main (void) {$/;"	f
+main	tcp_sender.cpp	/^int main (void) {$/;"	f
+main	udp_receiver.cpp	/^int main(void)$/;"	f
+main	udp_sender.cpp	/^int main(void)$/;"	f
+open	socket_lib/CommonSocket.cpp	/^    void CommonSocket::open (void) {$/;"	f	class:Socket::CommonSocket
+operator <<	socket_lib/Address.cpp	/^    ostream& operator<< (ostream &out, Address &address)$/;"	f	namespace:Socket
+operator <<	socket_lib/SocketException.cpp	/^    ostream& operator<< (ostream &out, SocketException &e) {$/;"	f	namespace:Socket
+operator =	socket_lib/Datagram.cpp	/^    void Datagram<DataType>::operator= (const Datagram<T> &datagram) {$/;"	f	class:Socket::Datagram
+port	socket_lib/Address.cpp	/^    Port Address::port(Port port)$/;"	f	class:Socket::Address
+port	socket_lib/Address.cpp	/^    Port Address::port(void)$/;"	f	class:Socket::Address
+port	socket_lib/TCP.cpp	/^    Port TCP::port (void) {$/;"	f	class:Socket::TCP
+prova	udp_receiver.cpp	/^struct prova$/;"	s	file:
+prova	udp_sender.cpp	/^struct prova$/;"	s	file:
+receive	socket_lib/TCP.cpp	/^    int TCP::receive (T* buffer, size_t len) {$/;"	f	class:Socket::TCP
+receive	socket_lib/UDP.cpp	/^    Datagram<T*> UDP::receive (T *buffer, size_t len = SOCKET_MAX_BUFFER_LEN) {$/;"	f	class:Socket::UDP
+receive	socket_lib/UDP.cpp	/^    Datagram<T> UDP::receive (void) {$/;"	f	class:Socket::UDP
+receive	socket_lib/UDP.cpp	/^    Datagram<T[N]> UDP::receive (size_t len = N) {$/;"	f	class:Socket::UDP
+receive	socket_lib/UDP.cpp	/^    Datagram<string> UDP::receive<string> (void) {$/;"	f	class:Socket::UDP
+receive	socket_lib/UDP.cpp	/^    Datagram<vector<T> > UDP::receive (size_t len) {$/;"	f	class:Socket::UDP
+receive	socket_lib/UDP.cpp	/^    int UDP::receive (Address *address, T *data, size_t len, unsigned int *received_elements) {$/;"	f	class:Socket::UDP
+receive_file	socket_lib/TCP.cpp	/^    void TCP::receive_file (string file_name) {$/;"	f	class:Socket::TCP
+received_bytes	socket_lib/Socket.hpp	/^        unsigned int received_bytes;$/;"	m	struct:Socket::Datagram
+received_elements	socket_lib/Socket.hpp	/^        unsigned int received_elements;$/;"	m	struct:Socket::Datagram
+send	socket_lib/TCP.cpp	/^    int TCP::send (const T* buffer, size_t len) {$/;"	f	class:Socket::TCP
+send	socket_lib/UDP.cpp	/^    int UDP::send (Address address, T data) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send (Address address, const T *data, size_t len) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send (Address address, vector<T> data) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send (Ip ip, Port port, T data) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send (Ip ip, Port port, const T *data, size_t len) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send (Ip ip, Port port, vector<T> data) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send<string> (Address address, string data) {$/;"	f	class:Socket::UDP
+send	socket_lib/UDP.cpp	/^    int UDP::send<string> (Ip ip, Port port, string data) {$/;"	f	class:Socket::UDP
+send_file	socket_lib/TCP.cpp	/^    void TCP::send_file (string file_name) {$/;"	f	class:Socket::TCP
+socklen_t	socket_lib/Socket.hpp	/^    typedef unsigned int socklen_t;$/;"	t	namespace:Socket
+something	udp_receiver.cpp	/^    int something;$/;"	m	struct:prova	file:
+something	udp_sender.cpp	/^    int something;$/;"	m	struct:prova	file:
+somethingelse	udp_receiver.cpp	/^    float somethingelse;$/;"	m	struct:prova	file:
+somethingelse	udp_sender.cpp	/^    float somethingelse;$/;"	m	struct:prova	file:
+what	socket_lib/SocketException.cpp	/^    const char* SocketException::what() const throw() {$/;"	f	class:Socket::SocketException
+~CommonSocket	socket_lib/CommonSocket.cpp	/^    CommonSocket::~CommonSocket (void) {$/;"	f	class:Socket::CommonSocket
+~SocketException	socket_lib/SocketException.cpp	/^    SocketException::~SocketException() throw() {$/;"	f	class:Socket::SocketException
